@@ -13,6 +13,7 @@
 		157DE66029130C4100EA14F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 157DE65E29130C4100EA14F6 /* Main.storyboard */; };
 		157DE66229130C4300EA14F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 157DE66129130C4300EA14F6 /* Assets.xcassets */; };
 		157DE66529130C4300EA14F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 157DE66329130C4300EA14F6 /* LaunchScreen.storyboard */; };
+		157DE66D2913256800EA14F6 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157DE66C2913256800EA14F6 /* ImageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		157DE66129130C4300EA14F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		157DE66429130C4300EA14F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		157DE66629130C4300EA14F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		157DE66C2913256800EA14F6 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				157DE65829130C4100EA14F6 /* AppDelegate.swift */,
 				157DE65A29130C4100EA14F6 /* SceneDelegate.swift */,
 				157DE65C29130C4100EA14F6 /* ViewController.swift */,
+				157DE66C2913256800EA14F6 /* ImageCell.swift */,
 				157DE65E29130C4100EA14F6 /* Main.storyboard */,
 				157DE66129130C4300EA14F6 /* Assets.xcassets */,
 				157DE66329130C4300EA14F6 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				157DE65D29130C4100EA14F6 /* ViewController.swift in Sources */,
+				157DE66D2913256800EA14F6 /* ImageCell.swift in Sources */,
 				157DE65929130C4100EA14F6 /* AppDelegate.swift in Sources */,
 				157DE65B29130C4100EA14F6 /* SceneDelegate.swift in Sources */,
 			);
