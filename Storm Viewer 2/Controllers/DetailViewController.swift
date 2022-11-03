@@ -8,7 +8,12 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-
+    
+    @IBOutlet var imageView: UIImageView!
+    var selectedImage: String?
+    var selectedImageNumber = 0
+    var totalPictures = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

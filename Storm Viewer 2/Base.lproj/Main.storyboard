@@ -79,13 +79,27 @@
                     <view key="view" contentMode="scaleToFill" id="0Kk-He-kgL">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xz1-SP-GR9">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="LJ7-qA-Mnk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Xz1-SP-GR9" firstAttribute="leading" secondItem="LJ7-qA-Mnk" secondAttribute="leading" id="5ZJ-pf-lRw"/>
+                            <constraint firstItem="Xz1-SP-GR9" firstAttribute="centerY" secondItem="0Kk-He-kgL" secondAttribute="centerY" id="F0j-G2-Q6T"/>
+                            <constraint firstItem="Xz1-SP-GR9" firstAttribute="top" secondItem="0Kk-He-kgL" secondAttribute="top" id="izs-4g-w3v"/>
+                            <constraint firstItem="Xz1-SP-GR9" firstAttribute="centerX" secondItem="0Kk-He-kgL" secondAttribute="centerX" id="x1P-27-YsF"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="Xz1-SP-GR9" id="ZaO-wh-sU7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v2Q-8a-A1I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1175" y="11"/>
+            <point key="canvasLocation" x="1174.8091603053435" y="10.563380281690142"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="odZ-yl-y2c">
