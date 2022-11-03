@@ -59,6 +59,11 @@ class ViewController: UICollectionViewController {
             fatalError("Unable to dequeue ImageCell")
         }
         
+        cell.imageView.image = UIImage(named: pictures[indexPath.item]) // to show the images in cells
+        cell.imageLabel.text = "Picture \(indexPath.item + 1)"
+        
+        
+        
         
         return cell
         
