@@ -21,6 +21,28 @@ class ViewController: UICollectionViewController {
         let textAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         navigationController?.navigationBar.largeTitleTextAttributes = textAttributes
         
+        loadPictures()
+        
+        
+    }
+    
+    
+    func loadPictures() {
+        
+        
+        let fm = FileManager.default
+        let path = Bundle.main.resourcePath!
+        var items = try! fm.contentsOfDirectory(atPath: path)
+        
+        for item in items {
+            if item.hasPrefix("nssl") {
+                pictures.append(item)
+            }
+        }
+        
+        
+        
+        
     }
     
     
