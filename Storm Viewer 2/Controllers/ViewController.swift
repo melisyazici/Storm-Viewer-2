@@ -21,7 +21,11 @@ class ViewController: UICollectionViewController {
         let textAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         navigationController?.navigationBar.largeTitleTextAttributes = textAttributes
         
-        loadPictures()
+        // load the pictures on the back
+        DispatchQueue.global(qos: .userInitiated).async { [weak self] in
+            self?.loadPictures()
+        }
+        
         
         
     }
@@ -38,6 +42,11 @@ class ViewController: UICollectionViewController {
             if item.hasPrefix("nssl") {
                 pictures.append(item)
             }
+        }
+        
+        // bring UI on the main thread
+        DispatchQueue.main.async { [ weak self] in
+            self?.collectionView.reloadData()
         }
         
         
