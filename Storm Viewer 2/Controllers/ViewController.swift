@@ -62,6 +62,7 @@ class ViewController: UICollectionViewController {
         cell.imageView.image = UIImage(named: pictures[indexPath.item]) // to show the images in cells
         cell.imageLabel.text = "Picture \(indexPath.item + 1)"
         
+        cell.layer.cornerRadius = 7        
         
         
         
